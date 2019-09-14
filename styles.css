@@ -1,3 +1,9 @@
 body {
     background-color: orange;
 }
+
+.img {
+    background: url("konoha.png") transparent;
+    width: 200;
+    height: 200;
+}
