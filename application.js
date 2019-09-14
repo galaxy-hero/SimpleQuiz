@@ -1,5 +1,7 @@
 const answers = ['C', 'B', 'A', 'B','A'];
 const form = document.querySelector('.quiz-form');
+const result = document.querySelector('.result');
+
 
 form.addEventListener('submit', ev => {
     ev.preventDefault();
@@ -12,5 +14,10 @@ form.addEventListener('submit', ev => {
         }
     });
 
-    console.log(score);
+    result.querySelector('span').textContent = `${score}%`;
+    result.classList.remove('d-none');
+
+    if(score > 0 && score < 50) {
+        result.querySelector
+    }
 })
